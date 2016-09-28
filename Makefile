@@ -7,10 +7,10 @@ mds = $(wildcard paper/sections/*.md)
 all: $(out) paper/paper.html
 
 paper/paper.md: $(mds)
-	touch paper/sections/00-abstract.md 
-	touch paper/sections/01-introduction.md 
-	touch paper/sections/02-discussion.md 
-	touch paper/sections/03-conclusion.md
+	# touch paper/sections/00-abstract.md 
+	# touch paper/sections/01-introduction.md 
+	# touch paper/sections/02-discussion.md 
+	# touch paper/sections/03-conclusion.md
 	cat $(mds) > $(out)
 
 #generate a html from a markdown file
