@@ -4,7 +4,7 @@ This paper will provide a detail tutorial of Stat 159 (Reproducible and Collabor
 
 ## Introduction 
 
-![](./images/stat159-logo.png)
+![](../images/stat159-logo.png)
 
 In Stat 159 (Reproducible and Collaborative Statistical Data Science), we focus on the importance of reproducible data and project. So far, we learned the basic computational tools to reproduce a project. First, we learned about bash where users types linux commands that cause actions in the terminal. Second, we learned about markdown syntax. Markdown is very useful for README file and it is a substitution of HTML. Third, we learned about pandoc where it can convert from one file format to another format. Pandoc is very useful for quick conversion of file type. Then, we moved on to git and github. Git is a version control which record changes of files. Github is a place where users can store their projects and collaborate a project with others under git. Lastly, we learned about makefile. Makefile is an easy way to organize files and it rely heavily on dependencies. Make only updates the files that are dependent for the target. After explaining how each tool works in details, I will tie in how these tools work with reproducible workflow. 
 
@@ -16,54 +16,38 @@ Makefile is used for organizing code. Make command help users to compile files a
 
 **2. Explain what is Git, and its role in this reproducible workflow.**
 
-![](./images/git-logo.png)
+![](../images/git-logo.png)
 
 Git is a version control system that helps users to organized code. Git have many useful commands such as add, commit, branch, merge and more. Users can create different branches and merge them into the master branch. Then users can pull the most updated version of everyone's committed work. Git helps keep track of changes with the history log. After committing the changes into git, users can backtrack the committed history and restore it at any time. It minimize the risk of losing code due to a failure of server.
 The first step of git is to set up a repository by using git init. It creates .git inside of the project root and it contains metadata for the repo. If you want to work on an existing git repository, then the users should use git clone. After you work on your project for a while, you can add a change to the staging area by using git add. Git add acts as a temporary file in the staging area because it doesn’t update the file until the users commit the changes. Users can add a particular file or a directory. When the users want to update the changes, the users can use git commit. It is always recommended to add a message along with git commit -m “message”. Git status can track the unstaged files. Lastly, git push is to transfer commits from my local repository to the remote repository. In reproducible workflow, git is efficient because it only saves the change of the project instead of a new copy each time. Git is also efficient when developers collaborate on a project because they can easily merge from different branches into the master branch. 
 
 **3. Explain what is GitHub, and its role in this project.**
 
-![](./images/github-logo.png)
+![](../images/github-logo.png)
 
 Github is a web platform with the version control system of git. It is a place where users can store their projects and they are able to collaborate with other users. Users can create a repository where they store all the files of a project. If the repository is private, you can keep the code just to yourself and your collaborators. If the repository is public, other users can work on the existing project by forking a repo. Github allow users to keep their code in one place. In this project, I made a repository named stat159-fall2016-project1. I initialize the project in my local computer and I am able to commit changes in the remote repo. When I logon to github website, I am able to view all my repositories and the history of commit for all the projects. I can also give permission on certain users to change my projects. 
 
 
 **4. Explain what is pandoc, and comment on its usefulness (or advantages).**
 
-![](./images/pandoc-logo.png)
+![](../images/pandoc-logo.png)
 
 Pandoc is a command line tool for document conversion. In class, we talked about converting markdown files to html, latex, pdf and docx. Pandoc also support many other file types. The advantage of pandoc is to be able to another document types without manually translate into it. For instance, pandoc allows user to convert from markdown to LaTex. Even if the user has no experience with LaTax, pandoc can still do the conversion as long as the user has LaTex installed. With the varieties of pandoc, users can create beautiful documents. 
 
 **5. Explain what is Markdown.**
 
-![](./images/markdown-logo.png)
+![](../images/markdown-logo.png)
 
 Markdown is a tool to display writing on the web. It is similar to HTML but the learning curve is a lot easier. Markdown is especially useful in the README.md file in Github project. Markdown can format headers, create bullet list, include images and more. It can also style words as bold and italic and including links. 
 
 ## Conlcusion
 
-**What resources you used to get the job done?**
+This essay covered the main topics of Stat 159 I learned so far. While writing the paper, I used a few resources to write this paper. I mainly used the lecture notes and some supported documents in the website to write this paper. In addition, I used Alassian git tutorial and markdown cheatsheet because they give a very detailed description. While working on the Makefile, I encountered a few coding errors and I used Stack Overflow to find solutions. 
 
-Stack Overflow to debug some coding errors while doing the Makefile.
+The easy parts are the bash commands and git because I learned those commands in other classes. I also found it easy to download images. The challenging parts is to use wildcard in the Markfile. 
 
-**What were the "easy" parts?**
-
-The easy parts are bash commands and git. I learned those commands in CS courses.
-
-**What were the challenging parts?**
-
-The challenging part is to use wildcard in Markfile.
-
-**What things you were stuck with?**
-
-I was trying to use wildcard for all the file ending in md. However, my code got stuck and it couldn’t concatenate the files. Later on, I went to office hour and Sindhuji helped me to figure out the error.
-
-
-**What was the most time consuming part?**
+TI was trying to use wildcard for all the file ending in md. However, my code got stuck and it couldn’t concatenate the files. Later on, I went to office hour and Sindhuji helped me to figure out the error.
 
 The most time consuming part is to complete the makefile tutorials. But after doing the demo from the tutorials, I am able to understand Makefile very well. 
 
-**Did you work with and/or get help from someone else? If yes, in what manner?**
-**How much time did it take?**
-
-I worked on this project by myself, but I also got help from Sindhuji regarding the wildcard in Makefile. The entire project took about 4 - 5 hours to complete. 
+I worked on this project by myself, but I also got help from Sindhuji regarding the wildcard in Makefile. The entire project took about 5 -7 hours to complete. 
